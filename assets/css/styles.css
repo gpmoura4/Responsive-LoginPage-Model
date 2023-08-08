@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    padding: 2rem;
+    background-color: rgb(34, 32, 32);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+
+header {
+    background-color: rgb(34, 32, 32);
+    padding: 3rem;
+    width: 90vw;
+    height: auto;
+    margin: 0 auto;
+    /* border-radius: 20px 20px 0px 0px; */
+    border-bottom: #F6A21E 2px solid;
+}
+
+#header-title {
+    text-align: center;
+    font-size: 7rem;
+    color: #F6A21E;
+    margin-bottom: 3rem;
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    list-style: none;
+}
+
+#nav-list a {
+    font-size: 3rem;
+    color: #eee;
+    text-decoration: none;
+    transition: 300ms;
+    padding: 2rem;
+    border-radius: 20px;
+    font-weight: 600;
+}
+
+#nav-list a:hover {
+    background-color: #eee;
+    color: #F6A21E;
+
+}
+
+main {
+    display: flex;
+    justify-content: center;
+}
+
+fieldset {
+    width: 45vw;
+    height: 50vh;
+    background-color: rgb(34, 32, 32);
+    padding: 3rem;
+    border: none;
+}
+
+.paragraph {
+    display: block;
+    color: #eee;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.user-information label,
+.radio-div {
+    display: block;
+    color: #eee;
+    font-size: 2.7rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+/* 
+.user-information input {
+    padding: 1rem;
+    border-radius: 5px;
+    border: 0.05rem solid rgb(143, 106, 106);
+    outline: 0;
+    background-color: rgb(255, 254, 214);
+    margin-bottom: 1rem;
+    width:100%;
+    max-width: 700px;
+}
+ */
+
+
+.user-information input {
+    border: none;
+    outline: none;
+    background: none;
+    border-bottom: 2px solid white;
+    border-left: 2px solid white;
+    color: white;
+    font-size: 1.5rem;
+    width: 100%;
+    max-width: 700px;
+    letter-spacing: 0.2rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+.radio-div label {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.radio-div input {
+    display: none;
+}
+
+.radio-div input+label:before {
+    content: '';
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+    background-color: white;
+    border: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 4px;
+    vertical-align: middle;
+}
+
+.radio-div input:checked+label:before {
+    background-color: rgb(255, 255, 255);
+    box-sizing: border-box;
+    border: 5px solid #F6A21E;
+    padding: 4px;
+}
+
+.button-div {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#button {
+    margin-top: 2rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    width: 20vw;
+    max-width: 200px;
+    padding: 2rem;
+    font-size: 2em;
+    font-weight: 600;
+    border-radius: 40px;
+    border: none;
+    background-color: #E55B13;
+    color: #eee;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+#button:hover {
+    background: linear-gradient(45deg, #F6A21E, #E55B13);
+}
+
+
+
+.imagens {
+    display: flex;
+    width: 45vw;
+    height: 60vh;
+    justify-content: center;
+    align-items: center;
+    /* padding-right: 11rem; */
+}
+
+.circle-2 {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #F6A21E, #E55B13);
+    clip-path: circle(17% at left 0%);
+
+}
+
+/* 
+Position absolute
+esta a 0 do topo e 0 da esquerda
+clipath ---> criar o circulo, (TAMANHO%, POSIÇÃO, POSIÇÃO DO EIXO Y)
+z-index ---> pra posicionar ela atrás dos elemeentos
+*/
+section.imagens .circle {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: linear-gradient(45deg, #F6A21E, #E55B13);
+    clip-path: circle(30% at right 80%);
+    z-index: -1;
+}
+
+
+.img_1 {
+    width: 450px;
+    max-width: 60%;
+}
+
+.img_2 {
+    width: 320px;
+    max-width: 40%;
+    margin-bottom: 6rem;
+}
+
+@media only screen and (min-width:700px) and (max-width:800px) {
+
+    .img_1 {
+        display: none;
+    }
+
+    .img_2 {
+        max-width: 80%;
+    }
+
+    header {
+        padding: 4rem;
+    }
+
+    .circle,
+    .circle-2 {
+        display: none;
+    }
+
+    html {
+        font-size: 59.5%;
+    }
+}
+
+@media only screen and (min-width:500px) and (max-width:692px) {
+    .imagens {
+        display: none;
+    }
+
+    fieldset {
+        width: 90vw;
+        height: auto;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+    html {
+        font-size: 60.5%;
+    }
+}
+
+@media only screen and (min-width:400px) and (max-width:500px) {
+    html {
+        /* font-size: 56.5%; */
+    }
+
+    .imagens {
+        display: none;
+    }
+
+    fieldset {
+        width: 90vw;
+        height: auto;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+
+    #header-title {
+        font-size: 6rem;
+    }
+
+    #nav-list a {
+        font-size: 2.2rem;
+        padding: 1rem;
+        justify-content: space-around;
+
+    }
+
+    #button {
+        width: 30vw;
+    }
+}
+
+
+@media only screen and (min-width:400px) and (max-width:500px) {
+    html {
+        /* font-size: 56.5%; */
+    }
+
+    .imagens {
+        display: none;
+    }
+
+    fieldset {
+        width: 90vw;
+        height: auto;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+
+    #header-title {
+        font-size: 6rem;
+    }
+
+    #nav-list a {
+        font-size: 2.2rem;
+        padding: 1rem;
+        justify-content: space-around;
+
+    }
+
+    #button {
+        width: 30vw;
+    }
+}
+
+@media only screen and (min-width:250px) and (max-width:400px) {
+    html {
+        font-size: 55.5%;
+    }
+
+    .imagens {
+        display: none;
+    }
+
+    fieldset {
+        width: 90vw;
+        height: auto;
+    }
+
+    .circle-2 {
+        display: none;
+    }
+
+
+
+    #header-title {
+        font-size: 4.8rem;
+    }
+
+    #nav-list a {
+        font-size: 2.2rem;
+        padding: 1rem;
+        justify-content: space-around;
+
+    }
+
+    #button {
+        width: 30vw;
+    }
+}
+
+/* JAVASCRIPT */
+
+.error-message {
+    color: white;
+    font-size: 1.7rem;
+    /* border-radius: 2rem; */
+    max-width: 500px;
+    background-color: #961f09;
+    padding: 1rem 0rem 1rem 1rem;
+    /* margin: 0.5rem 0rem 0.5rem 0rem; */
+}
