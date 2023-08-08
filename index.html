@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 
+
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="imagens/icones/favicons/hello.ico" type="image/x-icon">
+
     <link rel="stylesheet" href="assets/css/styles.css">
     <title>Crie sua conta!</title>
+</head>
+
+
+<link rel="stylesheet" href="styles.css">
+<title>Crie sua conta!</title>
 </head>
 
 <body>
@@ -16,8 +24,13 @@
         <nav>
             <ul id="nav-list">
                 <li>
+
                     <a target="_blank"
                         href="https://www.facebook.com/?stype=lo&jlou=AfcFYV5VhVdA5QCeYqKZVBnWhbZOQAlUjiUHtwIvdOaTojMkMg28wQK2SIaF0ZwkVgbI6hNM3GS4gdXiN29raigbxnBtkiHCu7pwn2LOAuT7fQ&smuh=8390&lh=Ac-kJNn_2dK90RiraDE">Facebook</a>
+
+                    <a target="_blank"
+                        href="https://www.facebook.com/?stype=lo&jlou=AfcFYV5VhVdA5QCeYqKZVBnWhbZOQAlUjiUHtwIvdOaTojMkMg28wQK2SIaF0ZwkVgbI6hNM3GS4gdXiN29raigbxnBtkiHCu7pwn2LOAuT7fQ&smuh=8390&lh=Ac-kJNn_2dK90RiraDE">Facebook</a>
+
                 </li>
                 <li>
                     <a target="_blank" href="https://www.google.com/intl/pt-BR/account/about/">Google</a>
@@ -29,6 +42,7 @@
         </nav>
     </header>
     <main>
+
 
         <section class="upper-circle">
             <div class="circle-2"></div>
@@ -84,5 +98,60 @@
     </main>
     <script src="./assets/js/main.js"></script>
 </body>
+
+
+
+<section class="upper-circle">
+    <div class="circle-2"></div>
+</section>
+
+
+<form id="formulario" action="">
+    <fieldset>
+        <div class="user-information">
+            <label id="label-name" for="nome">Nome Completo</label>
+            <input id="nome" type="text" placeholder="Insira seu nome" required>
+        </div>
+        <div class="user-information">
+            <label id="label-email" for="email">Email</label>
+            <input id="email" type="email" placeholder="Insira seu email" required>
+        </div>
+        <div class="user-information">
+            <label id="label-password" for="password">Senha</label>
+            <input id="password" type="password" placeholder="Insira sua senha" required>
+        </div>
+        <div class="user-information">
+            <label id="label-password2" for="password2">Confirme sua senha</label>
+            <input id="password2" type="password" placeholder="Insira sua senha" required>
+        </div>
+
+        <p class="paragraph">Você é maior de idade?</p>
+
+        <div class="radio-div">
+            <input value="sim" id="sim" type="radio" name="opcao">
+            <label for="sim">Sim</label>
+        </div>
+        <div class="radio-div">
+            <input value="não" id="não" type="radio" name="opcao">
+            <label for="não">Não</label>
+        </div>
+        <div class="button-div">
+            <input id="button" type="submit">
+
+
+        </div>
+
+    </fieldset>
+</form>
+
+<section class="imagens">
+
+    <img class="img_1" src="images/png_homem.png" alt="">
+    <img class="img_2" src="images/celpng2.png" alt="">
+    <div class="circle"></div>
+</section>
+</main>
+</body>
+
 
 </html>
